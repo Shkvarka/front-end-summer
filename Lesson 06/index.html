@@ -12,48 +12,50 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box; /*можно ли по дргому?*/
+        }
+        body {
+            background: #8db6ff;
+            border: 25px #7c9fde  solid;
+            height: 100vh;
         }
 
         .wrapper {
-            background: cornflowerblue;
+            font-family: sans-serif;
+            color: white;
             white-space: nowrap;
-            /*width: 1000px;*/
             max-width: 1000px;
-            min-width: 600px;
-            height: auto;
+            min-width: 700px;
             font-size: 0;
-            /*padding: 10px 0px;*/
             text-align: center; /* можно ли по другому выровнять по центру?*/
             padding: 0;
-            margin: auto;
+            margin: 20px auto;
         }
         .frame {
-            /*margin: auto;*/
+            background: cornflowerblue;
+            /*border: 1px solid;*/ /* почему добавляет большой паддинг?*/
+            margin: 20px;
+            /*height: 95vh; !*можно ли как то по другому сделать? и почему подошло только 96% ?*!*/
+            padding: 1px 1px 100px 1px; /*почему 1пх снизу такой большой*/
+            /*padding-bottom: auto; !*почему 1пх снизу такой большой*!*/
         }
-        /*li:last-child {*/
-            /*border-right: 3px solid red;*/
-        /*}*/
-        /*ul:last-child li{*/
-            /*border-bottom: 3px solid green;*/
-        /*}*/
+        li:last-child {
+            border-right: 5px solid;
+        }
+        ul:last-of-type li{
+            border-bottom: 5px solid;
+        }
         .frame__item {
             width: 25%;
-            /*border-top: 3px solid;*/
-            /*border-left: 3px solid;*/
-            border: 3px solid;
+            border-top: 5px solid;
+            border-left: 5px solid;
             display: inline-block;
-            color: white;
-            font-family: sans-serif;
             font-size: 24px;
             list-style-type: none;
-            /*padding: 20px 30px;*/
-            /*height: 110px;*/
+            padding: 30px;
             vertical-align: center;
             text-align: center;
-
         }
-
         .frame__item_size2x{
             width: 50%;
         }
@@ -69,87 +71,155 @@
             position: relative;
             top: 3px;
         }
+        p.logo {
+            text-align: left;
+            font-size: 25px;
+            line-height:70px;
+
+        }
+        div.footer {
+            text-align: left;
+            font-size: 20px;
+            line-height: 50px;
+
+        }
+        .city-name {
+            line-height: 50px;
+        }
+
+        li:hover {
+            opacity: 0.5;
+            transition: opacity 300ms;
+        }
+
+        /*div.container#c:hover {*/
+            /*opacity: 1;*/
+            /*transition: all 200ms;*/
+        /*}*/
+        /*li:not(:hover){*/
+            /*opacity: 0.5;*/
+            /*transition: all 2s;*/
+        /*}*/
+                /*[opacity="0.1"] {*/ /*ФАНТАЗИЯ ИЛИ БЕЗУМИЕ*/
+                    /*opacity: 1;*/
+                /*}*/
+
+
+
+        li.frame__item_coralblue {
+            background: #77c5e8;
+        }
+        li.frame__item_dark-purple {
+            background: #815fbd;
+        }
+        li.frame__item_red {
+            background: #b54a42;
+        }
+        li.frame__item_orange {
+            background: #dc6944;
+        }
+        li.frame__item_yellow {
+            background: #f7d369;
+        }
+        li.frame__item_light-green {
+            background: #a8d8aa;
+        }
+        li.frame__item_green-gray {
+            background: #90a591;
+        }
+        li.frame__item_pink {
+            background: #dc7296;
+        }
+        li.frame__item_green {
+            background: #4b904e;
+        }
+        li.frame__item_violet {
+            background: #7b669e;
+        }
 
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <!--<i class="wi wi-day-sunny"></i>-->
-        <ul class="frame">
-            <li class="frame__item frame__item_size2x">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-        </ul>
-        <ul class="frame">
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-        </ul>
-        <ul class="frame">
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-            <li class="frame__item frame__item_size2x">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-            <li class="frame__item frame__item_size1">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-        </ul>
-        <ul class="frame">
-            <li class="frame__item frame__item_size4x">
-                <span>Lisbon</span><br>
-                <span class="temperature">21<sup>o</sup>C
-                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
-                </span>
-            </li>
-        </ul>
-
+    <div class="container" id="c">
+        <div class="wrapper">
+            <p class="logo">CSS Weather Forecast <i class="wi wi-sunrise"></i></p>
+            <ul class="list">
+                <li class="frame__item frame__item_size2x" opacity="0.1">
+                    <span class="city-name">Lisbon</span><br>
+                    <span class="temperature">21<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                    </span>
+                    <img src="">
+                </li>
+                <li class="frame__item frame__item_size1 frame__item_coralblue">
+                    <span class="city-name">Paris</span><br>
+                    <span class="temperature">11<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-night-sleet"></i></span>
+                    </span>
+                </li>
+                <li class="frame__item frame__item_size1 frame__item_dark-purple">
+                    <span class="city-name">Belgrade</span><br>
+                    <span class="temperature">15<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-day-cloudy"></i></span>
+                    </span>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="frame__item frame__item_size1 frame__item_red">
+                    <span class="city-name">Moscow</span><br>
+                    <span class="temperature">21<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-day-cloudy-high"></i></span>
+                    </span>
+                </li>
+                <li class="frame__item frame__item_size1 frame__item_orange">
+                    <span class="city-name">Tel Aviv</span><br>
+                    <span class="temperature">32<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-hot"></i></span>
+                    </span>
+                </li>
+                <li class="frame__item frame__item_size1 frame__item_yellow">
+                    <span class="city-name">Ciar</span><br>
+                    <span class="temperature">21<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                    </span>
+                </li>
+                <li class="frame__item frame__item_size1 frame__item_light-green">
+                    <span class="city-name">New-York</span><br>
+                    <span class="temperature">17<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-day-sleet-storm"></i></span>
+                    </span>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="frame__item frame__item_size1 frame__item_green-gray">
+                    <span class="city-name">New Delphi</span><br>
+                    <span class="temperature">17<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-rain-wind"></i></span>
+                    </span>
+                </li>
+                <li class="frame__item frame__item_size2x frame__item_pink">
+                    <span class="city-name">San Francisco</span><br>
+                    <span class="temperature">15<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-day-cloudy"></i></span>
+                    </span>
+                </li>
+                <li class="frame__item frame__item_size1 frame__item_green">
+                    <span class="city-name">Tokyo</span><br>
+                    <span class="temperature">8<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-night-clear"></i></span>
+                    </span>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="frame__item frame__item_size4x frame__item_violet">
+                    <span class="city-name">Sydney</span><br>
+                    <span class="temperature">25<sup>o</sup>C
+                        <span class="w-icon"><i class="wi wi-night-partly-cloudy"></i></span>
+                    </span>
+                </li>
+            </ul>
+            <div class="footer">Have a nice day and don't forget umbrells if you are in New Delphi now!</div>
+        </div>
     </div>
 </body>
 </html>
