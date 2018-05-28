@@ -5,23 +5,151 @@
     <title>Homework Lesson 06</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" />
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css" />-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">-->
+    <!--<link rel="stylesheet" href="https1://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
     <style>
-        body {
-            background: gray;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            background: cornflowerblue;
+            white-space: nowrap;
+            /*width: 1000px;*/
+            max-width: 1000px;
+            min-width: 600px;
+            height: auto;
+            font-size: 0;
+            /*padding: 10px 0px;*/
+            text-align: center; /* можно ли по другому выровнять по центру?*/
+            padding: 0;
+            margin: auto;
+        }
+        .frame {
+            /*margin: auto;*/
+        }
+        /*li:last-child {*/
+            /*border-right: 3px solid red;*/
+        /*}*/
+        /*ul:last-child li{*/
+            /*border-bottom: 3px solid green;*/
+        /*}*/
+        .frame__item {
+            width: 25%;
+            /*border-top: 3px solid;*/
+            /*border-left: 3px solid;*/
+            border: 3px solid;
+            display: inline-block;
+            color: white;
+            font-family: sans-serif;
+            font-size: 24px;
+            list-style-type: none;
+            /*padding: 20px 30px;*/
+            /*height: 110px;*/
+            vertical-align: center;
+            text-align: center;
+
+        }
+
+        .frame__item_size2x{
+            width: 50%;
+        }
+        .frame__item_size4x{
+            width: 100%;
+        }
+
+        .temperature {
+            opacity: 0.6;
+        }
+        .w-icon {
+            font-size: 32px;
+            position: relative;
+            top: 3px;
         }
 
     </style>
 </head>
 <body>
-    <div>
-        <i class="wi wi-day-sunny"></i>
-        <i class="wi wi-night-sleet"></i>
-        <i class="wi wi-wind.towards-48-deg"></i>
-        <div><i class="wi wi-day-sunny"></i></div>
-        <div class=""><p class="text">Block 2</p></div>
-        <div class=""><p class="text">Block 3</p></div>
-        <div class=""><p class="text">Block 4</p></div>
+    <div class="wrapper">
+        <!--<i class="wi wi-day-sunny"></i>-->
+        <ul class="frame">
+            <li class="frame__item frame__item_size2x">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+        </ul>
+        <ul class="frame">
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+        </ul>
+        <ul class="frame">
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+            <li class="frame__item frame__item_size2x">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+            <li class="frame__item frame__item_size1">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+        </ul>
+        <ul class="frame">
+            <li class="frame__item frame__item_size4x">
+                <span>Lisbon</span><br>
+                <span class="temperature">21<sup>o</sup>C
+                    <span class="w-icon"><i class="wi wi-day-sunny"></i></span>
+                </span>
+            </li>
+        </ul>
+
     </div>
 </body>
 </html>
